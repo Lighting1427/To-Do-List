@@ -33,7 +33,7 @@ Follow these steps to get the project up and running:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/Lighting1427/To-Do-List.git
 cd your-repository
 ```
 
