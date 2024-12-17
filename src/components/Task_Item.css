@@ -1,0 +1,61 @@
+/* รีเซ็ตสไตล์พื้นฐานสำหรับ ul */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* สไตล์แต่ละ Task Item */
+.task-item {
+  display: flex; /* จัดเรียงแบบ flexbox */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวแกน Y */
+  justify-content: space-between; /* จัดการให้ห่างระหว่างข้อความกับปุ่ม */
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #f9f9f9; /* สีพื้นหลัง */
+  border: 1px solid #ddd; /* ขอบบางๆ */
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+}
+
+/* ช่องแสดงข้อความ Task */
+.task-item span {
+  flex: 1; /* ให้ข้อความยืดหยุ่นตามพื้นที่ที่เหลือ */
+  max-width: 200px; /* จำกัดความกว้างข้อความ */
+  word-wrap: break-word; /* บังคับให้ข้อความขึ้นบรรทัดใหม่เมื่อยาวเกิน */
+  overflow-wrap: break-word; /* ทำงานเหมือนกันรองรับเบราว์เซอร์เพิ่มเติม */
+  padding: 0 5px; /* เว้นขอบข้อความเล็กน้อย */
+  font-size: 14px; /* ขนาดตัวอักษร */
+  color: #333; /* สีตัวอักษร */
+}
+
+/* ปุ่ม Edit และ Delete */
+button {
+  margin-left: 5px;
+  background-color: #ff7043; /* สีส้ม */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: #f4511e; /* สีส้มเข้มขึ้นเมื่อ hover */
+}
+
+/* ช่อง input สำหรับแก้ไขข้อความและเวลา */
+.task-item input[type="text"],
+.task-item input[type="time"] {
+  margin: 0 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Checkbox */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}

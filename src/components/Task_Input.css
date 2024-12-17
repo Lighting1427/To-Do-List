@@ -1,0 +1,40 @@
+.Task_input {
+    display: flex; /* ทำให้ กล่องข้อความกับปุ่ม อยู่แถวเดียวกัน*/
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%; 
+    margin:auto; /*ทำให้กล่องข้อความอยู่ตรงกลาง*/
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add_task {
+    flex: 1; /* ทำให้ input ขยาย */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #666;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .add_button {
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add_button:hover {
+    background-color: #f4511e; 
+  }
+  
+  
